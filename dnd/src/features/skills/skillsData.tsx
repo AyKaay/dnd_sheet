@@ -6,12 +6,12 @@ export interface Skill {
     isExpertise: boolean;
     notes: string;
     baseAbility:
-        | "Strength"
-        | "Dexterity"
-        | "Constitution"
-        | "Intelligence"
-        | "Wisdom"
-        | "Charisma";
+        | "str"
+        | "dex"
+        | "con"
+        | "int"
+        | "wis"
+        | "cha";
     proficiencyBonus: number;
     temporaryBonus: number;
 }
@@ -45,7 +45,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Dexterity",
+        baseAbility: "dex",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -55,7 +55,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Wisdom",
+        baseAbility: "wis",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -65,7 +65,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Intelligence",
+        baseAbility: "int",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -75,7 +75,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Strength",
+        baseAbility: "str",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -85,7 +85,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Charisma",
+        baseAbility: "cha",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -95,7 +95,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Intelligence",
+        baseAbility: "int",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -105,7 +105,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Wisdom",
+        baseAbility: "wis",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -115,7 +115,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Charisma",
+        baseAbility: "cha",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -125,7 +125,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Intelligence",
+        baseAbility: "int",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -135,7 +135,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Wisdom",
+        baseAbility: "wis",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -145,7 +145,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Intelligence",
+        baseAbility: "int",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -155,7 +155,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Wisdom",
+        baseAbility: "wis",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -165,7 +165,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Charisma",
+        baseAbility: "cha",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -175,7 +175,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Charisma",
+        baseAbility: "cha",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -185,7 +185,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Intelligence",
+        baseAbility: "int",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -195,7 +195,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Dexterity",
+        baseAbility: "dex",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -205,7 +205,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Dexterity",
+        baseAbility: "dex",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },
@@ -215,7 +215,7 @@ export const skillsData: SkillsData = {
         isProficient: false,
         isExpertise: false,
         notes: "",
-        baseAbility: "Wisdom",
+        baseAbility: "wis",
         proficiencyBonus: 0,
         temporaryBonus: 0,
     },

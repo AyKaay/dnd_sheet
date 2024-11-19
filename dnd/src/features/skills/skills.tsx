@@ -1,6 +1,7 @@
 import { RootState } from "@reduxjs/toolkit/query";
 import ProficiencyBonus from "../proficiencyBonus/proficiencyBonus";
 import { Skill } from "./skillsData";
+import { useSelector } from "react-redux";
 
 type CharSkillProps = {
     skillName: string;
@@ -20,12 +21,12 @@ function AbilityProf(AbilityName: string){
 }
 
 // skillname: (stealth, nature, etc); AbilityName: (str, dex, int, etc); skillData: (Skill);
-function CharSkill({ skillName, skillData, updateSkill }: CharSkillProps, AbilityName: string) { 
+function CharSkill({ skillName, skillData, updateSkill, AbilityName }: CharSkillProps & { AbilityName: string }) { 
     
     const abilityMod = AbilityProf(AbilityName);
     const addProfBonus = ProficiencyBonus();
 
-    const totalSkillBonus = abilityMod + (addProfBonus * (skillData.isExpertise ? 2 : 1));
+    const totalSkillBonus = (isNaN(abilityMod) ? 0 : abilityMod) + (isNaN(addProfBonus) ? 0 : addProfBonus * (skillData.isExpertise ? 2 : 1));
 
     // ```` State Change ```` \\
 
